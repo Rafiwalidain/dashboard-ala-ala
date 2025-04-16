@@ -1,0 +1,110 @@
+:root {
+  --green: #2ecc71;
+  --orange: #f39c12;
+  --red: #e74c3c;
+}
+
+#content main {
+  padding: 36px 24px;
+  font-family: var(--poppins);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card i {
+  font-size: 2rem;
+  color: var(--blue);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.card p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.progress-section,
+.insights {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.progress-section h3,
+.insights h3 {
+  margin-bottom: 1rem;
+}
+
+.progress-group {
+  margin-bottom: 1rem;
+}
+
+.progress-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.progress-bar {
+  height: 14px;
+  background-color: var(--grey);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+}
+
+.success {
+  width: 70%;
+  background-color: var(--green);
+}
+
+.warning {
+  width: 20%;
+  background-color: var(--orange);
+}
+
+.danger {
+  width: 10%;
+  background-color: var(--red);
+}
+
+.insights {
+  margin-top: 2rem;
+}
+
+.insights ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.insights li::before {
+  content: "\2022";
+  color: var(--blue);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
